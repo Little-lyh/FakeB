@@ -1,52 +1,19 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-a {
-    text-decoration: none;
-}
-
-ul, ol, li {
-    list-style: none;
-}
-
-.clearfix::after {
-    content: '';
-    display: block;
-    clear: both;
-}
-
-body {
-    font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
-    font-size: 12px;
-}
-
-.main-page {
-    width: 980px;
-    height: 1450px;
-    margin: 0 auto;
-}
-
-.main-page > .anime {
-    margin-bottom: 30px;
+/*游戏*/
+.main-page >.game {
+    margin-bottom: 40px;
     display: flex;
     justify-content: space-between;
 }
-
-.main-page > .anime > .anime-left {
+.main-page > .game> .game-left{
     width: 700px;
 }
-
-.main-page > .anime > .anime-left > .anime-title {
+.main-page > .game> .game-left >.game-title{
     margin-bottom: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
-.main-page > .anime > .anime-left > .anime-title > .on {
+.main-page > .game> .game-left >.game-title >.on{
     position: relative;
     margin-right: 12px;
     height: 24px;
@@ -57,8 +24,7 @@ body {
     color: #00a1d6;
     border-bottom: 1px solid #00a1d6;
 }
-
-.main-page > .anime > .anime-left > .anime-title > .on:before {
+.main-page > .game> .game-left >.game-title >.on:before{
     content: '';
     position: absolute;
     left: 50%;
@@ -72,10 +38,9 @@ body {
     border-left-color: transparent;
     border-right-color: transparent;
 }
-
-.main-page > .anime > .anime-left > .anime-title > .icon {
+.main-page > .game> .game-left >.game-title >.icon{
     background-image: url(../images/icons3.png);
-    background-position: -141px -649px;
+    background-position: -141px -202px;
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -83,30 +48,25 @@ body {
     vertical-align: middle;
     margin-top: -10px;
 }
-
-.main-page > .anime > .anime-left > .anime-title > .name {
-    font-size: 24px !important;
+.main-page > .game> .game-left >.game-title >.name{
+    font-size: 24px!important;
     line-height: 24px;
     font-weight: 400;
     margin-right: 20px;
     color: #222;
 }
-
-.main-page > .anime > .anime-left > .anime-title > .num {
+.main-page > .game> .game-left >.game-title >.num{
     color: #99a2aa;
 }
-
-.main-page > .anime > .anime-left > .anime-title > .num > span {
+.main-page > .game> .game-left >.game-title >.num>span{
     color: #00a1d6;
 }
-
-.main-page > .anime > .anime-left > .anime-title > .hot {
+.main-page > .game> .game-left >.game-title >.hot{
     margin-left: 40px;
     padding-right: 10px;
     color: #6d757a;
 }
-
-.main-page > .anime > .anime-left > .anime-title > .hot > .icon {
+.main-page > .game> .game-left >.game-title >.hot >.icon{
     display: inline-block;
     vertical-align: middle;
     background-image: url(../images/icons3.png);
@@ -115,8 +75,7 @@ body {
     height: 14px;
     margin-top: -3px;
 }
-
-.main-page > .anime > .anime-left > .anime-title > .status {
+.main-page > .game> .game-left >.game-title >.status{
     display: inline-block;
     cursor: pointer;
     border: 1px solid #ccd0d7;
@@ -127,8 +86,7 @@ body {
     margin-left: 10px;
     transition: tab-item-a .2s;
 }
-
-.main-page > .anime > .anime-left > .anime-title > .status > .icon {
+.main-page > .game> .game-left >.game-title >.status >.icon{
     background-image: url(../images/icons3.png);
     display: inline-block;
     width: 12px;
@@ -138,19 +96,16 @@ body {
     margin-top: 5px;
     background-position: -475px -89px;
 }
-
-.main-page > .anime > .anime-left > .anime-title > .status > .status-info {
+.main-page > .game> .game-left >.game-title >.status >.status-info{
     display: inline-block;
     vertical-align: top;
     line-height: 22px;
     margin-left: 5px;
 }
-
-.main-page > .anime > .anime-left > .anime-title > .status > .status-info > .status-num {
+.main-page > .game> .game-left >.game-title >.status >.status-info >.status-num{
     font-weight: bold;
 }
-
-.main-page > .anime > .anime-left > .anime-title > .more {
+.main-page > .game> .game-left >.game-title >.more{
     display: inline-block;
     width: 52px;
     height: 24px;
@@ -163,16 +118,13 @@ body {
     margin: 0 0 0 10px;
     transition: tab-item-a .2s;
 }
-
-.main-page > .anime > .anime-left > .anime-title > .more:hover {
+.main-page > .game> .game-left >.game-title >.more:hover{
     background-color: #ccd0d7;
 }
-
-.main-page > .anime > .anime-left > .anime-title > .more > .more-text {
+.main-page > .game> .game-left >.game-title >.more >.more-text{
     display: inline-block;
 }
-
-.main-page > .anime > .anime-left > .anime-title > .more > .more-text > .icon {
+.main-page > .game> .game-left >.game-title >.more >.more-text >.icon{
     display: inline-block;
     background-position: -478px -218px;
     background-image: url(../images/icons3.png);
@@ -181,44 +133,38 @@ body {
     margin: -2px 0 0 2px;
     transition: all .2s;
 }
-
-.main-page > .anime > .anime-left > .anime-ct {
+.main-page > .game> .game-left >.game-ct{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
-.main-page > .anime > .anime-left > .anime-ct > .item {
+.main-page > .game> .game-left >.game-ct >.item{
     width: 160px;
     height: 148px;
     margin-bottom: 20px;
     overflow: hidden;
     position: relative;
 }
-
-.main-page > .anime > .anime-left > .anime-ct > .item > a > .pic {
+.main-page > .game> .game-left >.game-ct >.item >a >.pic{
     position: relative;
     width: 160px;
     height: 100px;
 }
-
-.main-page > .anime > .anime-left > .anime-ct > .item > a > .pic > img {
+.main-page > .game> .game-left >.game-ct >.item >a >.pic >img{
     border-radius: 4px;
 }
-
-.main-page > .anime > .anime-left > .anime-ct > .item > a > .pic > .mask {
+.main-page > .game> .game-left >.game-ct >.item >a >.pic >.mask{
     opacity: 0;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0,0,0,.5);
     border-radius: 4px;
     transition: opacity .3s;
 }
-
-.main-page > .anime > .anime-left > .anime-ct > .item > a > .pic > .mask > .time {
+.main-page > .game> .game-left >.game-ct >.item >a >.pic >.mask >.time{
     position: absolute;
     opacity: 1;
     bottom: 0;
@@ -227,23 +173,22 @@ body {
     height: 19px;
     line-height: 12px;
     transition: tab-item-a .3s;
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0,0,0,.5);
     padding: 3px 5px;
     border-radius: 4px 0 4px 0;
 }
-
-.main-page > .anime > .anime-left > .anime-ct > .item > a > .a-hover {
+.main-page > .game> .game-left >.game-ct >.item >a >.a-hover {
     padding-top: 8px;
     height: 40px;
     line-height: 20px;
     transition: tab-item-a .2s linear;
     color: #222;
     word-wrap: break-word;
+    word-break: break-all;
     overflow: hidden;
     text-align: left;
 }
-
-.main-page > .anime > .anime-left > .anime-ct > .item > a > .info {
+.main-page > .game> .game-left >.game-ct >.item >a >.info{
     position: absolute;
     width: 100%;
     bottom: 0;
@@ -253,8 +198,7 @@ body {
     background-color: #fff;
     transition: tab-item-a .3s;
 }
-
-.main-page > .anime > .anime-left > .anime-ct > .item > a > .info > .auther {
+.main-page > .game> .game-left >.game-ct >.item >a >.info >.auther{
     line-height: 12px;
     height: 14px;
     width: 50%;
@@ -262,9 +206,8 @@ body {
     overflow: hidden;
     vertical-align: bottom;
 }
-
-.main-page > .anime > .anime-left > .anime-ct > .item > a > .info > .auther > .icon {
-    background-position: -282px -154px;
+.main-page > .game> .game-left >.game-ct >.item >a >.info >.auther >.icon{
+    background-position: -282px -90px;
     background-image: url(../images/icons3.png);
     display: inline-block;
     width: 12px;
@@ -272,16 +215,14 @@ body {
     vertical-align: top;
     margin-right: 5px;
 }
-
-.main-page > .anime > .anime-left > .anime-ct > .item > a > .info > .audience {
+.main-page > .game> .game-left >.game-ct >.item >a >.info >.audience{
     line-height: 12px;
     height: 14px;
     display: inline-block;
     overflow: hidden;
     vertical-align: bottom;
 }
-
-.main-page > .anime > .anime-left > .anime-ct > .item > a > .info > .audience > .icon {
+.main-page > .game> .game-left >.game-ct >.item >a >.info >.audience >.icon{
     background-position: -282px -218px;
     background-image: url(../images/icons3.png);
     display: inline-block;
@@ -290,36 +231,30 @@ body {
     vertical-align: top;
     margin-right: 5px;
 }
-
-.main-page > .anime > .anime-right {
+.main-page > .game> .game-right{
     width: 260px;
     min-height: 360px;
     overflow: hidden;
 }
-
-.main-page > .anime > .anime-right > .title {
+.main-page > .game> .game-right >.title{
     display: flex;
     justify-content: space-between;
     height: 24px;
     line-height: 24px;
 }
-
-.main-page > .anime > .anime-right > .title > .tab {
+.main-page > .game> .game-right >.title >.tab{
     display: flex;
     justify-content: flex-start;
-
+    
 }
-
-.main-page > .anime > .anime-right > .title > .tab > p {
+.main-page > .game> .game-right >.title >.tab >p{
     font-size: 18px;
     margin-right: 20px;
 }
-
-.main-page > .anime > .anime-right > .title > .tab > .on {
+.main-page > .game> .game-right >.title >.tab >.on{
     border-bottom: 1px solid #00a1d6;
 }
-
-.main-page > .anime > .anime-right > .title > .tab > .on:before {
+.main-page > .game> .game-right >.title >.tab >.on:before{
     content: '';
     position: absolute;
     left: 50%;
@@ -333,12 +268,10 @@ body {
     border-left-color: transparent;
     border-right-color: transparent;
 }
-
-.main-page > .anime > .anime-right > .title > .tab > .tab-panel:hover {
+.main-page > .game> .game-right >.title >.tab >.tab-panel:hover{
     color: #00a1d6;
 }
-
-.main-page > .anime > .anime-right > .title > .tab > .tab-panel {
+.main-page > .game> .game-right >.title >.tab >.tab-panel{
     position: relative;
     margin-right: 12px;
     height: 24px;
@@ -347,8 +280,7 @@ body {
     padding: 1px 0 2px 0;
     transition: .2s;
 }
-
-.main-page > .anime > .anime-right > .title > .toggle {
+.main-page > .game> .game-right >.title >.toggle{
     position: relative;
     display: inline-block;
     vertical-align: middle;
@@ -359,12 +291,10 @@ body {
     border: 1px solid #ccd0d7;
     border-radius: 4px;
 }
-
-.main-page > .anime > .anime-right > .title > .toggle > .selected {
+.main-page > .game> .game-right >.title >.toggle >.selected{
     display: inline-block;
 }
-
-.main-page > .anime > .anime-right > .title > .toggle > .icon {
+.main-page > .game> .game-right >.title >.toggle >.icon{
     background-position: -475px -157px;
     background-image: url(../images/icons3.png);
     display: inline-block;
@@ -374,8 +304,7 @@ body {
     margin-left: 5px;
     margin-top: -1px;
 }
-
-.main-page > .anime > .anime-right > .title > .toggle > .dropdown-list {
+.main-page > .game> .game-right >.title >.toggle >.dropdown-list{
     position: absolute;
     width: 100%;
     border: 1px solid #ccd0d7;
@@ -386,32 +315,27 @@ body {
     display: none;
     border-radius: 0 0 4px 4px;
 }
-
-.main-page > .anime > .anime-right > .title > .toggle > .dropdown-list > li {
+.main-page > .game> .game-right >.title >.toggle >.dropdown-list >li{
     cursor: pointer;
     padding: 3px 7px;
 }
-
-.main-page > .anime > .anime-right > .tab-item {
+.main-page > .game> .game-right >.tab-item{
     position: relative;
     margin-top: 23px;
     width: 260px;
     height: 298px;
 }
-
-.main-page > .anime > .anime-right > .tab-item > .carousel-outside {
+.main-page > .game> .game-right >.tab-item >.carousel-outside{
     position: absolute;
     display: flex;
     justify-content: flex-start;
     width: 260px;
     z-index: 999;
 }
-
-.main-page > .anime > .anime-right > .tab-item > .carousel-outside > .tab-item-a {
+.main-page > .game> .game-right >.tab-item >.carousel-outside >.tab-item-a{
     width: 260px;
 }
-
-.main-page > .anime > .anime-right > .tab-item > .carousel-outside > .tab-item-a > .a-item {
+.main-page > .game> .game-right >.tab-item >.carousel-outside >.tab-item-a >.a-item{
     position: relative;
     display: flex;
     justify-content: flex-start;
@@ -419,8 +343,7 @@ body {
     padding-left: 25px;
     margin-bottom: 20px;
 }
-
-.main-page > .anime > .anime-right > .tab-item > .carousel-outside > .tab-item-a > .a-item > .number {
+.main-page > .game> .game-right >.tab-item >.carousel-outside >.tab-item-a >.a-item >.number{
     position: absolute;
     background-color: #b8c0cc;
     color: #fff;
@@ -435,47 +358,39 @@ body {
     font-weight: bolder;
     text-align: center;
 }
-
-.main-page > .anime > .anime-right > .tab-item > .carousel-outside > .tab-item-a > .a-item > .num-top {
+.main-page > .game> .game-right >.tab-item >.carousel-outside >.tab-item-a >.a-item >.num-top{
     background-color: #f25d8e;
 }
-
-.main-page > .anime > .anime-right > .tab-item > .carousel-outside > .tab-item-a > .a-item > .content {
+.main-page > .game> .game-right >.tab-item >.carousel-outside >.tab-item-a >.a-item >.content{
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
-
-.main-page > .anime > .anime-right > .tab-item > .carousel-outside > .tab-item-a > .a-item > .content > .logo {
+.main-page > .game> .game-right >.tab-item >.carousel-outside >.tab-item-a >.a-item >.content >.logo{
     margin-right: 5px;
     border-radius: 4px;
     width: 80px;
     height: 50px;
 }
-
-.main-page > .anime > .anime-right > .tab-item > .carousel-outside > .tab-item-a > .a-item > .content > .logo > img {
+.main-page > .game> .game-right >.tab-item >.carousel-outside >.tab-item-a >.a-item >.content >.logo >img{
     border-radius: 4px;
 }
-
-.main-page > .anime > .anime-right > .tab-item > .carousel-outside > .tab-item-a > .a-item > .content > .title {
+.main-page > .game> .game-right >.tab-item >.carousel-outside >.tab-item-a >.a-item >.content >.title{
     color: #222;
 }
-
-.main-page > .anime > .anime-right > .tab-item > .carousel-outside > .tab-item-a > .a-item > .content > .title > .text {
+.main-page > .game> .game-right >.tab-item >.carousel-outside >.tab-item-a >.a-item >.content >.title >.text{
     line-height: 18px;
     height: 18px;
     overflow: hidden;
 }
-
-.main-page > .anime > .anime-right > .tab-item > .carousel-outside > .tab-item-a > .a-item > .content > .title > .point {
+.main-page > .game> .game-right >.tab-item >.carousel-outside >.tab-item-a >.a-item >.content >.title >.point{
     margin-top: 4px;
     color: #99a2aa;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
-
-.main-page > .anime > .anime-right > .see-more {
+.main-page > .game> .game-right >.see-more{
     display: block;
     height: 24px;
     line-height: 23px;
@@ -486,13 +401,11 @@ body {
     border-radius: 4px;
     transition: .2s;
 }
-
-.main-page > .anime > .anime-right > .see-more:hover {
+.main-page > .game> .game-right >.see-more:hover{
     background-color: #ccd0d7;
     border-color: #ccd0d7;
 }
-
-.main-page > .anime > .anime-right > .see-more > .icon {
+.main-page > .game> .game-right >.see-more >.icon{
     display: inline-block;
     vertical-align: middle;
     background-position: -478px -218px;
@@ -502,13 +415,3 @@ body {
     margin: -2px 0 0 5px;
 }
 
-.main-page >.advertise{
-    width: 980px;
-    max-height: 80px;
-    margin-bottom: 20px;
-}
-.main-page >.advertise> a> img{
-    width: 100%;
-    height: 100%;
-    border-radius: 4px;
-}
